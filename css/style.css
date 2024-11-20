@@ -91,9 +91,10 @@ li{
   font-family: 'LogoFont';
   font-size: 1.6rem;
   letter-spacing: 2px;
+}
+.logo a{
   color: #000;
 }
-
 .nav-links {
     list-style: none;
     display: flex;

@@ -91,6 +91,9 @@ li{
   font-size: 1.6rem;
   letter-spacing: 2px;
 }
+.logo a{
+    color: #000;
+}
 
 .nav-links {
     list-style: none;
