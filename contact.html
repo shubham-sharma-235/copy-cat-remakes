@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CopyCatRemakes</title>
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,    wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+            rel="stylesheet"
+          />
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="./css/contact.css">
+    </head>
+<body>
+    <!-- ------------------------------ -->
+
+    <nav class="navbar">
+        <div class="logo">
+          <h2>COPYCAT</h2>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">All Remakes</a></li>
+          <li><a href="#">Personalized Feedback</a></li>
+          <li><a class="active" href="#">Contact</a></li>
+        </ul>
+        <div></div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- ------------------------------ -->
+
+    <div class="contact-section">
+        <div class="contact-container">
+            <h1>Contact</h1>
+            <p>Have a question, request, or feedback?</p>
+            <p>Drop us a line, and we'll get back to you soon.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="2adfd282-7259-4b6a-bb5f-a4a092b93dca">
+                <div class="name-fields">
+                    <div class="field">
+                        <label for="firstName">Full Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- <div class="field">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div> -->
+                <div class="field">
+                    <label for="subject">Subject line</label>
+                    <select class="subject-dropdown" name="subject issue" id="subject_input" required="">
+                      <option disabled="" hidden="" selected="">Select</option>
+                      <option>I’ve encountered a technical issue</option>
+                      <option>I'd like to ask a question</option>
+                      <option>I'd like to make a proposal</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ------------------------------ -->
+
+    <footer>
+        <h4>Follow Us:</h4>
+          <div class="sm-icons">
+              <a href=""><i class='bx bxl-instagram'></i></a>
+              <a href=""><i class='bx bxl-youtube' ></i></a>
+          </div>
+        <h4>Or</h4>
+        <h4>Contact Directly at:</h4>
+        <a href="mailto:copycatremakes@gmail.com">copycatremakes@gmail.com</a>
+    </footer>
+    
+
+
+    <!-- ------------------------------ -->
+</body>
+</html>

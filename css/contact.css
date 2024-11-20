@@ -1,0 +1,161 @@
+@font-face{
+    font-family: 'century-gothic';
+    src: url('../copycat_font/century-gothic-font/CenturyGothic.ttf');
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    margin-top:2vw;
+    width: 100%;
+    background-image: url(../images/contact-bg.jpg);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+.contact-container {
+    max-width: 700px;
+    width: 100%;
+    padding: 10px;
+    background-color: #292929;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'century-gothic';
+    padding: 4rem;
+    border: 1px solid #444;
+}
+
+.contact-container h1 {
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.contact-container p:nth-child(2){
+    font-size: .8em;
+    margin: 1.2rem 0;
+    color: #888;
+}
+
+.contact-container p {
+    color: #888;
+    margin: 5px 0;
+    font-size: .6em;
+    margin-top: 10px;
+}
+
+.contact-form {
+    margin-top: 3rem
+}
+
+.name-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field input, .field textarea ,.subject-dropdown{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    font-size: 1em;
+    background-color: #242424;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+.subject-dropdown{
+    font-size: 14px;
+    padding: 16px 4px;
+}
+.field label {
+    display: block;
+    font-weight: 100;
+    text-align: start;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #999;
+}
+
+
+
+
+:root {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #ffffff;
+    --sb-size: 7px;
+  }
+  
+  #message::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  #message::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+  }
+  
+  #message::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    .message {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
+.contact-container button {
+    background-color: #333333;
+    color: #888;
+    font-weight: 700;
+    padding: 16px 60px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive Styling */
+@media (min-width: 740px) {
+    .name-fields {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .field {
+        width: 100%;
+    }
+}
+
+@media(max-width:720px){
+    .contact-container {
+        max-width: 94vw;
+        margin-top: 8vh;
+        padding: 10px;
+        padding: 1.6rem;
+        border: 1px solid #444;
+    }
+}
+
+footer {
+    margin-top: 0rem;
+}
