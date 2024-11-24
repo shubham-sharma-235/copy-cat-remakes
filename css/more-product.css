@@ -580,4 +580,16 @@ li{
     justify-content: center;
 }
 
+@media(max-width:600px){
+    #button-container {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #button-container button{
+        padding: 10px 20px;
+        margin: 6px 6px;
+    }
+}
+
 /* -------------------------------- */
