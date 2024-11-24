@@ -47,7 +47,7 @@
     <div class="hero-section">
         <div class="hero-left">
             <video autoplay muted loop>
-                <source src="./video/final4.mp4" type="video/mp4">
+                <source src="./video/more-product-page-hero-video.webm" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -137,19 +137,54 @@
 
     <div class="filter-container">
         <div id="button-container">
-            <button id="button-1" class="active-button" onclick="showContainer(1)">Show Container 1</button>
-            <button id="button-2" onclick="showContainer(2)">Show Container 2</button>
-            <button id="button-3" onclick="showContainer(3)">Show Container 3</button>
-            <button id="button-4" onclick="showContainer(4)">Show Container 4</button>
-            <button id="button-5" onclick="showContainer(5)">Show Container 5</button>
+            <button id="button-1" class="active-button" onclick="showContainer(1)">All Products</button>
+            <button id="button-2" onclick="showContainer(2)">Vital Presents</button>
+            <button id="button-3" onclick="showContainer(3)">Serum Presents</button>
+            <button id="button-4" onclick="showContainer(4)">Sylenth Presents</button>
+            <button id="button-5" onclick="showContainer(5)">Sample Packs</button>
         </div>
     
         <div id="content-container">
-            <div id="container-1" class="content">This is Container 1</div>
-            <div id="container-2" class="content" style="display: none;">This is Container 2</div>
-            <div id="container-3" class="content" style="display: none;">This is Container 3</div>
-            <div id="container-4" class="content" style="display: none;">This is Container 4</div>
-            <div id="container-5" class="content" style="display: none;">This is Container 5</div>
+            <div id="container-1" class="content">
+
+                <div class="product-conatainer">
+
+                    <div class="product-card">
+                      <img src="./images/post-malon-music-cover.webp" alt="">
+                      
+                      <div class="product-card-content">
+                        <h2>Song Title - Here</h2>
+                        <p>Artist Name</p>
+                      </div>
+                      
+                      <div class="right-btn">
+                        <span> $24.99 </span>
+                        <img src="./images/menu-icon.png" alt="">
+                      </div>
+                    </div>
+        
+                    <!-- --------------------------- -->
+        
+                    <div class="product-card">
+                      <img src="https://i.pinimg.com/564x/e5/06/8f/e5068f009ec3ae8ac067fd56eb329cac.jpg" alt="">
+                      
+                      <div class="product-card-content">
+                        <h2>Song Title - Here</h2>
+                        <p>Artist Name</p>
+                      </div>
+                      
+                      <div class="right-btn">
+                        <span> $24.99 </span>
+                        <img src="./images/menu-icon.png" alt="">
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="container-2" class="content" style="display: none;">Comming Soon</div>
+            <div id="container-3" class="content" style="display: none;">Comming Soon</div>
+            <div id="container-4" class="content" style="display: none;">Comming Soon</div>
+            <div id="container-5" class="content" style="display: none;">Comming Soon</div>
         </div>
     </div>
 
@@ -179,7 +214,7 @@
             // Show the selected container
             const selectedContainer = document.getElementById(`container-${containerNumber}`);
             if (selectedContainer) {
-                selectedContainer.style.display = 'block';
+                selectedContainer.style.display = 'flex';
             }
 
             // Add active class to the clicked button
