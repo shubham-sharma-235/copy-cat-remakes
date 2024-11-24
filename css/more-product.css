@@ -309,7 +309,7 @@ li{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: 50%;
+    width: 60%;
     margin-bottom: 10px;
     background-color: #fff;
 }
@@ -558,7 +558,7 @@ li{
 /* -------------------------------- */
 
 .active-button {
-    background-color: #afadad; /* Optional for visual feedback */
+    background-color: #afadad6c;
 }
 #button-container{
     margin: 2rem;

@@ -14,6 +14,42 @@
         />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      .latest-remakr-prise-span{
+        margin-left: 6rem;
+        font-size: 14px;
+      }
+      .product-conatainer {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .product-card {
+        width: 30vw;
+        height: 8vw;
+        justify-content: start;
+      }
+      .product-card-content {
+        margin-left: 1vw;
+      }
+      @media(max-width:600px){
+        .latest-remakr-prise-span{
+          margin-left: 0rem;
+        }
+        .recent-remake-img {
+          margin-right: 10px;
+          background-color: #e3e3e3;
+        }
+        .product-conatainer {
+          grid-template-columns: 1fr;
+        }
+        .product-card {
+          width: 80vw;
+          height: 20vw;
+        }
+        .hero-section-latest-pack .hero-section-latest-pack-price {
+          width: 60%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="main">
@@ -54,21 +90,20 @@
             </div>
             <div class="hero-section-latest-pack">
                 <div class="hero-section-latest-pack-img">
-                    <img src="./images/fake-album-cover.png" alt="">
+                    <img src="./images/comming-soon-img-1.png" alt="">
                 </div>
                 <div>
                    <div>
-                      <h3>Song Title</h3>
-                      <h5>Artist</h5>
+                      <h3>???</h3>
+                      <!-- <h5>Artist</h5> -->
                    </div>
-                   <div class="hero-section-latest-pack-price">
-                      <h4><span class="dollar-sign">$</span>14.99</h4>
-                      <h4><s>$24.99</s></h4>
+                   <div style="display: flex;justify-content: space-between;" class="hero-section-latest-pack-price">
+                      <h4 style="font-size: 18px;font-family: SongTitle-ProductCard;">COMING SOON</h4>
+                      <!-- <h4><s>$24.99</s></h4> -->
                       <i class='bx bx-menu'></i>
                    </div>
                    <div class="sale-tag">
-                       <span>All newly added products receive a 50% discount for limited period of time
-                        Recent Remakes:</span>
+                       <span>All newly added products receive a 50% discount for limited period of time</span>
                    </div>
                 </div>
             </div>
@@ -78,15 +113,14 @@
                 <div class="recent-packs-card">
                     <div class="recent-remake-card">
                         <div class="recent-remake-img">
-                            <img src="./images/post-malon-music-cover.webp" alt="">
+                            <img src="./images/comming-soon-img-1.png" alt="">
                         </div>
                         <div class="recent-remake-content">
-                          <h2>Fake Album Name</h2>
-                          <h4>Artist Name</h4>
+                          <h2>???</h2>
                         </div>
                         <div class="latest-remakr-prise-span">
-                          <span> 
-                            <I class="latest-remake-dollar-sign">$</I> <span class="recent-remake-price">24.99</span>
+                          <span style="font-family: SongTitle-ProductCard;font-weight: 600;"> 
+                            Coming Soon</span>
                           </span>
                           <i class='bx bx-chevron-right'></i>
                         </div>
@@ -95,15 +129,14 @@
                 <div class="recent-packs-card">
                     <div class="recent-remake-card">
                         <div class="recent-remake-img">
-                            <img src="./images/post-malon-music-cover.webp" alt="">
+                            <img src="./images/comming-soon-img-2.png" alt="">
                         </div>
                         <div class="recent-remake-content">
-                          <h2>Fake Album Name</h2>
-                          <h4>Artist Name</h4>
+                          <h2>???</h2>
                         </div>
                         <div class="latest-remakr-prise-span">
-                          <span> 
-                            <I class="latest-remake-dollar-sign">$</I> <span class="recent-remake-price">24.99</span>
+                          <span style="font-family: SongTitle-ProductCard;font-weight: 600;"> 
+                            Coming Soon</span>
                           </span>
                           <i class='bx bx-chevron-right'></i>
                         </div>
@@ -112,15 +145,14 @@
                 <div class="recent-packs-card">
                     <div class="recent-remake-card">
                         <div class="recent-remake-img">
-                            <img src="./images/post-malon-music-cover.webp" alt="">
+                            <img src="./images/comming-soon-img-3.png" alt="">
                         </div>
                         <div class="recent-remake-content">
-                          <h2>Fake Album Name</h2>
-                          <h4>Artist Name</h4>
+                          <h2>???</h2>
                         </div>
                         <div class="latest-remakr-prise-span">
-                          <span> 
-                            <I class="latest-remake-dollar-sign">$</I> <span class="recent-remake-price">24.99</span>
+                          <span style="font-family: SongTitle-ProductCard;font-weight: 600;"> 
+                            Coming Soon</span>
                           </span>
                           <i class='bx bx-chevron-right'></i>
                         </div>
@@ -144,17 +176,13 @@
                 data-aos-delay="10"
                 data-aos-duration="400"
               >
-              <img src="./images/post-malon-music-cover.webp" alt="">
+              <img style="border: none;" src="./images/comming-soon-img-1.png" alt="">
               
               <div class="product-card-content">
-                <h2>Song Title - Here</h2>
-                <p>Artist Name</p>
+                <h2>Coming Soon</h2>
               </div>
               
-              <div class="right-btn">
-                <span> $24.99 </span>
-                <img src="./images/menu-icon.png" alt="">
-              </div>
+              <div></div>
             </div>
 
             <!-- --------------------------- -->
@@ -165,17 +193,13 @@
                 data-aos-delay="10"
                 data-aos-duration="400"
               >
-              <img src="https://i.pinimg.com/564x/e5/06/8f/e5068f009ec3ae8ac067fd56eb329cac.jpg" alt="">
+              <img style="border: none;" src="./images/comming-soon-img-2.png" alt="">
               
               <div class="product-card-content">
-                <h2>Song Title - Here</h2>
-                <p>Artist Name</p>
+                <h2>Coming Soon</h2>
               </div>
               
-              <div class="right-btn">
-                <span> $24.99 </span>
-                <img src="./images/menu-icon.png" alt="">
-              </div>
+              <div></div>
             </div>
 
             <!-- --------------------------- -->
@@ -186,17 +210,13 @@
                 data-aos-delay="10"
                 data-aos-duration="400"
               >
-              <img src="https://i.pinimg.com/564x/e5/06/8f/e5068f009ec3ae8ac067fd56eb329cac.jpg" alt="">
+              <img style="border: none;" src="./images/comming-soon-img-3.png" alt="">
               
               <div class="product-card-content">
-                <h2>Song Title - Here</h2>
-                <p>Artist Name</p>
+                <h2>Coming Soon</h2>
               </div>
               
-              <div class="right-btn">
-                <span> $24.99 </span>
-                <img src="./images/menu-icon.png" alt="">
-              </div>
+              <div></div>
             </div>
           </div>
       </div>

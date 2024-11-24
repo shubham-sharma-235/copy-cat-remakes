@@ -741,6 +741,13 @@ footer a:hover{
 }
 
 @media(max-width:780px){
+  .hero-left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
   .heading-style-one {
     padding: 1rem;
     padding-top: 2rem;
