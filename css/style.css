@@ -59,19 +59,21 @@ a{
     cursor: pointer!important;
 }
 body{
-    scroll-behavior: smooth;
-    font-family: var(--primary-font);
+  scroll-behavior: smooth;
+  font-family: var(--primary-font);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-/* 
-    width: 100%;
-    max-width: 1920px;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 li{
-    list-style: none;
+  list-style: none;
 }
+
+.main{
+  max-width: 98.9rem;
+}
+
 .main{
   max-width: 98.9rem;
 }
@@ -640,7 +642,7 @@ font-size: 14px;
   background-color: #000;
   color: #fff;
   font-size: 1.4rem;
-  width: 12rem;
+  width: 14rem;
   height: 3rem;
   margin-top: 5rem;
   margin-right: .6rem;
