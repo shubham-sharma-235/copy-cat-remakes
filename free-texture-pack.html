@@ -201,6 +201,21 @@
 
     </div>
 
+    <script>
+      // Select all audio elements
+      const audioElements = document.querySelectorAll('audio');
+      audioElements.forEach(audio => {
+          // Add event listener to each audio element
+          audio.addEventListener('play', () => {
+              // Pause all other audio elements
+              audioElements.forEach(otherAudio => {
+                  if (otherAudio !== audio) {
+                      otherAudio.pause();
+                  }
+              });
+          });
+      });
+   </script>
     <script src="./js/app.js"></script>
   </body>
 </html>

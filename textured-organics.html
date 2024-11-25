@@ -456,5 +456,20 @@
     </div>
 
     <script src="./js/app.js"></script>
+    <script>
+       // Select all audio elements
+       const audioElements = document.querySelectorAll('audio');
+       audioElements.forEach(audio => {
+           // Add event listener to each audio element
+           audio.addEventListener('play', () => {
+               // Pause all other audio elements
+               audioElements.forEach(otherAudio => {
+                   if (otherAudio !== audio) {
+                       otherAudio.pause();
+                   }
+               });
+           });
+       });
+    </script>
   </body>
 </html>
