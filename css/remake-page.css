@@ -37,6 +37,7 @@ body{
     backdrop-filter: blur( 9.5px );
 }
 .final-sale{
+    color: #fff;
     margin: 1rem;
     border: 1px solid #fff;
     text-align: center;
