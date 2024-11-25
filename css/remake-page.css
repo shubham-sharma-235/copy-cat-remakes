@@ -159,6 +159,7 @@ body{
 }
 .remake-details p{
     margin: 1rem 0;
+    color: #424242;
 }
 
 .versions-details-container{
@@ -206,7 +207,6 @@ body{
 }
 
 .audio-section-heading{
-    background-color: #fff;
     width: 100%;
     height: 6rem;
     font-size: 1.2rem;
@@ -219,7 +219,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 3rem;
-    background-color: #fff;
     padding: 30px;
 }
 .audio-card{
@@ -233,6 +232,7 @@ body{
     font-size: 1.4rem;
     margin-bottom: 18px;
     font-family: 'Title-fonts'!important;
+    color: #424242;
 
 }
 .audio-card div{
