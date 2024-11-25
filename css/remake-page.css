@@ -35,7 +35,7 @@ body{
     /* justify-content: start; */
     width: 100%;
     height: 100%;
-
+    margin-top:-1rem;
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9.5px );
@@ -116,7 +116,7 @@ body{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 0rem;
+    bottom: -1rem;
     padding-top: 5rem;
     padding-bottom: 2rem;
     background-color: #242424 
