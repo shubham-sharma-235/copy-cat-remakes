@@ -101,7 +101,7 @@ li{
     margin-left: -10rem;
 }
 .nav-links .active{
-  border-bottom: 3px solid #888;
+  border-bottom: 3px solid #204873;
 }
 .nav-links li {
     margin: 0 50px;
@@ -119,7 +119,7 @@ li{
 
 .nav-links li a:hover {
     transition: all ease-in-out .1s;
-    color: #aacc00;
+    color: #204873;
 }
 
 .hover-underline-animation {
