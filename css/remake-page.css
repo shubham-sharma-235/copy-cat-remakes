@@ -20,9 +20,9 @@ body{
     flex-direction: column;
     align-items: center;
 
-    background-image: url('../images/post-malon-music-cover.webp');
+    background-image: url('../images/product-images/product-one-img-enlarged.png');
     background-repeat: no-repeat;
-    background-size: 350%;
+    background-size: 210%;
 }
 .remake-page-left-contant{
     display: flex;
@@ -74,15 +74,24 @@ body{
 
 .price-card{
     margin-top: 1rem;
-    background-color: #424242;
+    background-color: #000;
     width: 18rem;
+    font-weight: 600;
+    font-family: 'Price-ProductCard'; 
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+.price-card:hover{
+    box-shadow: 0px 0px 40px 0px rgb(40, 39, 39);
+    transition: all ease-in-out .2s;
 }
 .price-card .price-card-heading{
     background-color: #fff;
-    height: 2rem;
+    height: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
 }
 
 .price-card .price-card-bottom{
@@ -183,7 +192,92 @@ body{
      background-image: url('../images/Background-imgs/general-breakdown-bg.png');
 }
 
+.audio-section-heading{
+    background-color: #fff;
+    width: 100%;
+    height: 6rem;
+    font-size: 1.2rem;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.demo-audio-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3rem;
+    background-color: #fff;
+    padding: 30px;
+}
+.audio-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0 1rem;
+}
+.audio-card h4{
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+.audio-card div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.audio-card div audio{
+    margin: 12px;
+}
 
+.audio-card audio{
+    width: 18rem;
+    height: 2rem;
+}
+.audio-card audio::-webkit-media-controls-enclosure {
+    border-radius: 0;
+}
+.audio-card audio::-webkit-media-controls-panel {
+    background-color: #b1b1b1;
+}
+
+/* .audio-card audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+} */
+
+
+/* .audio-card audio::-webkit-media-controls-panel {
+    background-color: #000;
+}
+.audio-card audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+.audio-card audio::-webkit-media-controls-mute-button {
+}
+.audio-card audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+}
+.audio-card audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+.audio-card audio::-webkit-media-controls-timeline {
+    background-color: #fff;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.audio-card audio::-webkit-media-controls-volume-slider {
+    background-color: #B1D4E0;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+} */
+  
+.audio-card div h5{
+    margin-right: 12px;
+    font-size: 24px;
+    font-weight: 100;
+}
 
 footer{
     position: relative;
@@ -193,6 +287,35 @@ footer{
     height: 20rem;    
     background-color: #fff;
     margin-top: 0;
+}
+
+@media(max-width:1430px){
+    .audio-card audio {
+        width: 14rem;
+        height: 2rem;
+    }
+}
+@media(max-width:1300px){
+    .audio-card audio {
+        width: 18rem;
+        height: 2rem;
+    }
+    .demo-audio-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+        background-color: #fff;
+        padding: 20px;
+    }
+}
+@media(max-width:1050px){
+    .demo-audio-section{
+        display: grid;
+        grid-template-columns: 1fr ;
+        row-gap: 3rem;
+        background-color: #fff;
+        padding: 30px;
+    }
 }
 
 @media(max-width: 870px){
@@ -206,6 +329,7 @@ footer{
         width: 100%;
         /* padding: 20px; */
         height: 160vh;
+        z-index: 100;
     }
 
     
