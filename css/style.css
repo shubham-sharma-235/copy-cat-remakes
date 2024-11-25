@@ -104,7 +104,7 @@ li{
     margin-left: -10rem;
 }
 .nav-links .active{
-  border-bottom: 3px solid #888;
+  border-bottom: 3px solid #aacc00;
 }
 .nav-links li {
     margin: 0 50px;
@@ -114,16 +114,17 @@ li{
     text-decoration: none;
     font-size: 16px;
     padding: 8px;
-    border-radius: 4px;
     letter-spacing: 1px;
     font-weight: 800;
     color: #000;
-    transition: all ease-in-out .15s;
+    transition: all ease-in-out .1s;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-links li a:hover {
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out .1s;
     color: #aacc00;
+    border-bottom: 2px solid #aacc00;
 }
 
 .hover-underline-animation {
