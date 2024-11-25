@@ -70,11 +70,14 @@ body{
     font-size: 2rem;
     margin-top: 1rem;
     font-weight: 500;
+    font-family: 'Title-fonts'!important;
 }
 .remake-cover h3{
     font-size: 1.2rem;
     font-weight: 300;
     color: #e5e5e5;
+    font-family: 'Title-fonts'!important;
+
 }
 
 .price-card{
@@ -386,4 +389,10 @@ footer{
     }
 }
 
-
+@media(max-width:600px){
+    .demo-audio-section{
+        row-gap: 2rem;
+        background-color: #fff;
+        padding: 0px;
+    }
+}
