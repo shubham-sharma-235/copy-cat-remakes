@@ -67,13 +67,17 @@
                     <input type="text" id="subject" name="subject" required>
                 </div> -->
                 <div class="field">
-                    <label for="subject">Subject line</label>
-                    <select class="subject-dropdown" name="subject issue" id="subject_input" required="">
-                      <option disabled="" hidden="" selected="">Select</option>
+                    <label for="subject_input">Subject Issue:</label>
+                    <select class="subject-dropdown" name="subject issue" id="subject_input" required>
+                      <option disabled hidden selected>Select</option>
                       <option>I’ve encountered a technical issue</option>
-                      <option>I'd like to ask a question</option>
-                      <option>I'd like to make a proposal</option>
+                      <option value="sell-products">I want to sell my products on your website</option>
                     </select>
+                </div>
+
+                <div id="project-description" class="field">
+                    <label for="project_details">Describe Your Project:</label>
+                    <textarea id="project_details" name="project_details" rows="4" cols="50"></textarea>
                 </div>
 
                 <div class="field">
@@ -103,7 +107,18 @@
     </footer>
     
 
-
+    <script>
+        const subjectInput = document.getElementById('subject_input');
+        const projectDescription = document.getElementById('project-description');
+    
+        subjectInput.addEventListener('change', function () {
+          if (this.value === 'sell-products') {
+            projectDescription.style.display = 'block';
+          } else {
+            projectDescription.style.display = 'none';
+          }
+        });
+    </script>
     <!-- ------------------------------ -->
 </body>
 </html>

@@ -593,8 +593,7 @@ font-size: 14px;
   margin: .4rem .4rem;
   height: 8.5vw;
   transition: all ease-in-out .25s;
-  background-color: #eceaea;
-  background-color: #fff;
+  background-color: #F0F0F0;
   cursor: pointer;
   color: #000;
   padding-left: 2px;
@@ -608,6 +607,7 @@ font-size: 14px;
 
 .product-card-content{
   margin-left: -4vw;
+  padding-top: 12px;
 }
 
 .product-card h2{
