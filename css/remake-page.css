@@ -2,6 +2,10 @@
     font-family: 'SongTitle-ProductCard'; 
     src: url('../copycat_font/product-list/song-title-Product-list.ttf'); 
 }
+@font-face {
+    font-family: 'Title-fonts'; 
+    src: url('../copycat_font/futura-condensed-medium.ttf'); 
+}
 body{
     font-family: 'SongTitle-ProductCard'; 
 }
@@ -13,7 +17,7 @@ body{
     left: 0;
     width: 24%;
     /* padding: 20px; */
-    height: 160vh;
+    height: 180vh;
     padding-top: 5rem;
 
     display: flex;
@@ -74,7 +78,7 @@ body{
 }
 
 .price-card{
-    margin-top: 1rem;
+    margin-top: 4rem;
     background-color: #000;
     width: 18rem;
     font-weight: 600;
@@ -109,7 +113,12 @@ body{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 2rem;
+    bottom: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-color: #242424 
+    ;
+    width: 100%;
 }
 .terms-section a{
     text-decoration: underline;  
@@ -220,6 +229,8 @@ body{
 .audio-card h4{
     font-size: 1.4rem;
     margin-bottom: 18px;
+    font-family: 'Title-fonts'!important;
+
 }
 .audio-card div{
     display: flex;
