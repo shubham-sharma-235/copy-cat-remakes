@@ -282,6 +282,8 @@ li{
   height: 100%;
   object-fit: cover;
   clip-path: polygon(0 0, 96% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
+
 }
 
 .hero-right {
@@ -784,6 +786,12 @@ footer a:hover{
 .footer-bottom a{
   padding-left: 4px;
   font-size: 14px;
+}
+
+@media screen and (min-width: 2000px) {
+  html{
+      zoom: 125%;
+  }
 }
 
 @media(max-width:1300px){
