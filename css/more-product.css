@@ -93,6 +93,9 @@ body.dark-mode .navbar {
 body.dark-mode .navbar a{
     color: #fff;
 }
+body.dark-mode .hamburger .bar {
+    background-color: #fff;
+}
 
 .toggle-button {
     position: fixed;
@@ -108,7 +111,6 @@ body.dark-mode .navbar a{
 
     /* display: none; */
 }
-
 .toggle-button:hover {
     background-color: #ffffff;
     color: #000000;
@@ -585,7 +587,7 @@ li{
         font-size: 5vw;
     }
     .hero-section-latest-pack .sale-tag{
-        width: 100%;
+        width: 90%;
         font-size: 12px;
         color: #414040;
     }
@@ -632,6 +634,10 @@ li{
 }
 
 @media(max-width:600px){
+    .toggle-button{
+        top: 14px;
+        right: 60px!important;
+    }
     #button-container {
         margin: 2rem;
         display: grid;
@@ -640,6 +646,9 @@ li{
     #button-container button{
         padding: 10px 20px;
         margin: 6px 6px;
+    }
+    body.dark-mode .nav-links {
+        background-color: #1c1c1c;
     }
 }
 

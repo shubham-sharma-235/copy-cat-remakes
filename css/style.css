@@ -87,6 +87,22 @@ body.dark-mode .navbar {
 body.dark-mode .navbar a{
   color: #fff;
 }
+body.dark-mode .sale-tag {
+  color: #b6b5b5;
+}
+body.dark-mode .hero-section-latest-pack-price {
+  border: 2px solid #fff;
+}
+body.dark-mode .hero-section-latest-pack-price i{
+  color: #fff;
+}
+body.dark-mode .bx-chevron-right {
+  border-left: 2px solid #1c1c1c;
+}
+body.dark-mode .hamburger .bar {
+  background-color: #fff;
+}
+
 
 .toggle-button {
   position: fixed;
@@ -432,11 +448,10 @@ border-radius: 3px;
                    var(--sb-track-color);
 }
 }
-.recent-remake-img{
-  background-color: #e3e3e3;
-}
+
 .recent-remakes img{
-height: 3.4rem;
+  height: 3.4rem;
+  margin-bottom: -4px;
 }
 .recent-remake-card{
 display: flex;
@@ -578,7 +593,7 @@ font-size: 14px;
       font-size: 5vw;
   }
   .hero-section-latest-pack .sale-tag{
-      width: 100%;
+      width: 90%;
       font-size: 12px;
       color: #414040;
   }
@@ -755,7 +770,7 @@ footer a{
   transition: all ease-in-out .2s;
 }
 footer a:hover{
-  color: #141414;
+  color: #767575;
 }
 .footer-bottom{
   display: flex;
@@ -788,6 +803,13 @@ footer a:hover{
 }
 
 @media(max-width:780px){
+  .toggle-button{
+    right: 60px;
+    top: 14px;
+  }
+  body.dark-mode .nav-links {
+    background-color: #1c1c1c;
+  }
   .hero-left video {
     width: 100%;
     height: 100%;

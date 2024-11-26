@@ -22,6 +22,22 @@ body.dark-mode .remake-details h2 {
 body.dark-mode footer {
     background-color: #1c1c1c;
 }
+body.dark-mode .sale-tag {
+    color: #b6b5b5;
+}
+body.dark-mode .hero-section-latest-pack-price {
+  border: 2px solid #fff;
+}
+body.dark-mode .hero-section-latest-pack-price i{
+  color: #fff;
+}
+body.dark-mode .bx-chevron-right {
+    border-left: 2px solid #1c1c1c;
+}
+body.dark-mode .hamburger .bar {
+    background-color: #fff;
+}
+
 
 
   
@@ -93,7 +109,6 @@ body.dark-mode footer {
     font-weight: 300;
     color: #e5e5e5;
     font-family: 'Title-fonts'!important;
-
 }
 
 .price-card{
@@ -106,7 +121,7 @@ body.dark-mode footer {
     cursor: pointer;
 }
 .price-card:hover{
-    box-shadow: 0px 0px 40px 0px rgb(40, 39, 39);
+    box-shadow: 20px 20px 120px 0px rgb(40, 39, 39);
     transition: all ease-in-out .2s;
 }
 .price-card .price-card-heading{
@@ -335,7 +350,6 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 3rem;
-        background-color: #fff;
         padding: 20px;
     }
 }
@@ -344,7 +358,6 @@ footer{
         display: grid;
         grid-template-columns: 1fr ;
         row-gap: 3rem;
-        background-color: #fff;
         padding: 30px;
     }
 }
@@ -359,7 +372,7 @@ footer{
         left: 0;
         width: 100%;
         /* padding: 20px; */
-        height: 160vh;
+        height: 174vh;
         z-index: 100;
     }
 
@@ -406,9 +419,15 @@ footer{
 }
 
 @media(max-width:600px){
+    .toggle-button{
+        top: 14px;
+        right: 60px!important;
+    }
     .demo-audio-section{
         row-gap: 2rem;
-        background-color: #fff;
         padding: 0px;
+    }
+    body.dark-mode .nav-links {
+        background-color: #1c1c1c!important;
     }
 }
