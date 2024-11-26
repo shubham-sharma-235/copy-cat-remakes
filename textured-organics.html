@@ -24,6 +24,7 @@
           <li><a href="./index.html">All Products</a></li>
           <li><a href="./our-remakes.html">Our Remakes</a></li>
           <li><a href="./contact.html">Contact</a></li>
+          <button class="toggle-button" id="dark-mode-toggle">Enable Dark Mode</button>
         </ul>
         <div></div>
         <div class="hamburger" id="hamburger">
@@ -466,6 +467,27 @@
                });
            });
        });
+
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        // Apply saved preference on page load
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            toggleButton.textContent = 'Disable Dark Mode';
+        }
+
+        // Toggle dark mode and save preference
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleButton.textContent = 'Disable Dark Mode';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                toggleButton.textContent = 'Enable Dark Mode';
+            }
+        });
     </script>
   </body>
 </html>

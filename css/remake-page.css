@@ -10,6 +10,22 @@ body{
     font-family: 'SongTitle-ProductCard'; 
 }
 
+body.dark-mode .audio-card h4{
+    color: #fff;
+}
+body.dark-mode .remake-details p {
+    color: #fff;
+}
+body.dark-mode .remake-details h2 {
+    color: #fff;
+}
+body.dark-mode footer {
+    background-color: #1c1c1c;
+}
+
+
+  
+
 .remake-page-left{
     background-color: #de8064;
     position: sticky;

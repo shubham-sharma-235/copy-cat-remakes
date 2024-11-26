@@ -34,6 +34,7 @@
           <li><a class="active" href="./index.html">All Products</a></li>
           <li><a href="./our-remakes.html">Our Remakes</a></li>
           <li><a href="./contact.html">Contact</a></li>
+          <button class="toggle-button" id="dark-mode-toggle">Enable Dark Mode</button>
         </ul>
         <div></div>
         <div class="hamburger" id="hamburger">
@@ -80,7 +81,7 @@
 
                 <div class="recent-packs-card">
                     <a href="./textured-organics.html" style="color: #000;">
-                      <div class="recent-remake-card">
+                      <div class="recent-remake-card container">
                         <div class="recent-remake-img">
                             <img src="./images/product-images/product-one-img-2.png" alt="">
                         </div>
@@ -88,7 +89,7 @@
                           <h2>Textured Organics</h2>
                           <h4>Vital Preset Pack</h4>
                         </div>
-                        <div class="latest-remakr-prise-span">
+                        <div class="latest-remakr-prise-span black-container">
                           <span> 
                             <I class="latest-remake-dollar-sign">$</I> <span class="recent-remake-price">59.99</span>
                           </span>
@@ -99,7 +100,7 @@
                 </div>
                 <div class="recent-packs-card">
                     <a href="./free-texture-pack.html" style="color: #000;">
-                      <div class="recent-remake-card">
+                      <div class="recent-remake-card container">
                         <div class="recent-remake-img">
                             <img src="./images/product-images/product-two-img-2.png" alt="">
                         </div>
@@ -107,7 +108,7 @@
                           <h2>Texture Pack</h2>
                           <h4>Noise/Foley Pack</h4>
                         </div>
-                        <div class="latest-remakr-prise-span" style="margin-left: 2.6rem;">
+                        <div class="latest-remakr-prise-span black-container" style="margin-left: 2.6rem;">
                           <span> 
                              <span class="recent-remake-price">Free</span>
                           </span>
@@ -154,7 +155,7 @@
                 <div class="product-conatainer">
 
                     <a href="./textured-organics.html">
-                      <div class="product-card" style="border: none;">
+                      <div class="product-card container" style="border: none;">
                         <img style="border: none;" src="./images/product-images/product-one-img-withoud-bg-2.png" alt="">
                         
                         <div class="product-card-content">
@@ -172,7 +173,7 @@
                     <!-- --------------------------- -->
         
                     <a href="./free-texture-pack.html">
-                      <div class="product-card" style="border: none;">
+                      <div class="product-card container" style="border: none;">
                         <img style="border: none;" src="./images/product-images/product-two-img-withoud-bg-2.png" alt="">
                         
                         <div class="product-card-content">
@@ -287,6 +288,27 @@
                 activeButton.classList.add('active-button');
             }
         }
+
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        // Apply saved preference on page load
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            toggleButton.textContent = 'Disable Dark Mode';
+        }
+
+        // Toggle dark mode and save preference
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleButton.textContent = 'Disable Dark Mode';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                toggleButton.textContent = 'Enable Dark Mode';
+            }
+        });
     </script>
     <script src="./js/app.js"></script>
 </body>
