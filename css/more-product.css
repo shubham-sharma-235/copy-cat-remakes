@@ -366,7 +366,7 @@ li{
     align-items: center;
 }
 .hero-section-latest-pack .hero-section-latest-pack-price{
-    border: 2px solid #141414;
+    border: 2px solid #383838;
     padding: 6px 12px;
     display: flex;
     flex-direction: row;
@@ -458,7 +458,7 @@ li{
   justify-content: space-between;
   /* width: 80%; */
   margin: 4px 0;
-  border: 1px solid #888;
+  border: 1px solid #383838;
   padding-right: 16px;
 }
 .recent-remake-card h2{
