@@ -65,26 +65,26 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <!-- <div class="field">
+                <div class="field">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div> -->
-                <div class="field">
-                    <label for="subject_input">Subject Issue:</label>
-                    <select class="subject-dropdown" name="subject issue" id="subject_input" required>
-                      <option disabled hidden selected>Select</option>
-                      <option>I’ve encountered a technical issue</option>
-                      <option value="sell-products">I want to sell my products on your website</option>
-                      <option>Other</option>
-                    </select>
+                </div>
+                <select class="subject-dropdown" name="subject issue" id="subject_input" required>
+                  <option disabled hidden selected>Select</option>
+                  <option value="technical-issue">I’ve encountered a technical issue</option>
+                  <option value="sell-products">I want to sell my products on your website</option>
+                  <option value="other">Other</option>
+                </select>
+            
+                <div id="sell-products-field" class="dynamic-field field" style="margin-top: 8px;">
+                  <textarea id="project_details message" name="project_details" rows="4" cols="50" placeholder="Provide details about your project"></textarea>
+                </div>
+            
+                <div id="other-field" class="dynamic-field field" style="margin-top: 8px;">
+                  <textarea id="other_details" name="other_details" rows="4" cols="50" placeholder="Provide additional details"></textarea>
                 </div>
 
-                <div id="project-description" class="field">
-                    <label for="project_details">Describe Your Project:</label>
-                    <textarea id="project_details" name="project_details" rows="4" cols="50"></textarea>
-                </div>
 
-                <div class="field">
+                <div class="field" style="margin-top: 8px;">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
@@ -110,16 +110,22 @@
     
     <script src="./js/app.js"></script>
     <script>
-        const subjectInput = document.getElementById('subject_input');
-        const projectDescription = document.getElementById('project-description');
-    
-        subjectInput.addEventListener('change', function () {
-          if (this.value === 'sell-products') {
-            projectDescription.style.display = 'block';
-          } else {
-            projectDescription.style.display = 'none';
-          }
-        });
+         const subjectInput = document.getElementById('subject_input');
+         const sellProductsField = document.getElementById('sell-products-field');
+         const otherField = document.getElementById('other-field');
+     
+         subjectInput.addEventListener('change', function () {
+           // Hide all dynamic fields initially
+           sellProductsField.style.display = 'none';
+           otherField.style.display = 'none';
+     
+           // Show specific fields based on selected option
+           if (this.value === 'sell-products') {
+             sellProductsField.style.display = 'block';
+           } else if (this.value === 'other') {
+             otherField.style.display = 'block';
+           }
+         });
 
         const toggleButton = document.getElementById('dark-mode-toggle');
         const body = document.body;

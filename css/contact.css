@@ -159,7 +159,11 @@ body{
 }
 
 #project-description {
-    display: none; /* Initially hide the field */
+    display: none; 
+}
+.dynamic-field {
+    display: none; 
+    
 }
 
 .contact-container button:hover {
