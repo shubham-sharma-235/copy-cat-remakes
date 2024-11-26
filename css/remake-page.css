@@ -37,7 +37,13 @@ body.dark-mode .bx-chevron-right {
 body.dark-mode .hamburger .bar {
     background-color: #fff;
 }
-
+body.dark-mode .navbar {
+    background-color: #1e1e1e; 
+    border-bottom: 3px solid #424242;
+}
+body.dark-mode footer {
+    background-color: #1a1a1a;
+}
 
 
   
