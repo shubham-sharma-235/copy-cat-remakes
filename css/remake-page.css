@@ -329,7 +329,9 @@ body.dark-mode footer {
     font-size: 24px;
     font-weight: 100;
 }
-
+.buy-button{
+    display: none;
+}
 footer{
     position: relative;
     bottom: 0;
@@ -438,5 +440,8 @@ footer{
     }
     body.dark-mode .nav-links {
         background-color: #1c1c1c!important;
+    }
+    .buy-button{
+        display: block;
     }
 }
