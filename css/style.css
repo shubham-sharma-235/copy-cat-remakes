@@ -109,7 +109,7 @@ body.dark-mode .hamburger .bar {
 
 .toggle-button {
   position: fixed;
-  top: 20px;
+  top: 14px;
   right: 20px;
   padding: 10px 20px;
   background-color: #000000;
@@ -166,6 +166,7 @@ li{
     list-style: none;
     display: flex;
     margin-left: -10rem;
+    margin-bottom: .4rem;
 }
 .nav-links .active{
   border-bottom: 3px solid #204873;
