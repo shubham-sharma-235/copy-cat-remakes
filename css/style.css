@@ -808,6 +808,7 @@ footer a:hover{
   html{
       zoom: 125%;
       max-width: 100%;
+      overflow-x: hidden;
   }
 }
 
