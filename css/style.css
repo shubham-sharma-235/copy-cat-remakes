@@ -740,7 +740,7 @@ footer{
   width: 100%;
   margin-top: 4rem;
   border-top: 2px solid #141414;
-  padding: 1.4rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -749,14 +749,13 @@ footer{
   font-family: 'SongTitle-ProductCard';
 }
 footer h4{
-  font-size: 1.4rem;
-  margin: 10px 0;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #888;
   letter-spacing: 1px;
 }
 footer .sm-icons i{
-  font-size: 2rem;
+  font-size: 1.4rem;
   padding: 8px;
   margin: 20px 30px;
   border-radius: 4px;
@@ -786,6 +785,7 @@ footer a:hover{
   flex-direction: row;
   align-items: center;
   padding: 14px;
+  font-size: 16px;
 }
 .footer-bottom a{
   padding-left: 4px;
