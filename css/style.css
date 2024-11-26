@@ -807,6 +807,7 @@ footer a:hover{
 @media screen and (min-width: 2000px) {
   html{
       zoom: 125%;
+      max-width: 100%;
   }
 }
 
