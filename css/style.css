@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+  user-select: none;
+}
 @font-face {
   font-family: 'LogoFont'; 
   src: url('../copycat_font/other/Logo.otf'); 
