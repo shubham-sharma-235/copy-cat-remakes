@@ -108,7 +108,19 @@ body.dark-mode .hamburger .bar {
 body.dark-mode footer {
   background-color: #1a1a1a;
 }
-
+/* body.dark-mode .hero-section-latest-pack-img .remake-cover-black{
+  display: none;
+} */
+body.dark-mode .navbar {
+  background-color: #1e1e1e; 
+  border-bottom: 3px solid #424242;
+}
+body.dark-mode footer {
+  background-color: #1a1a1a;
+}
+body.dark-mode .hero-section {
+  border-bottom: 3px solid #424242;
+}
 
 .toggle-button {
   position: fixed;
@@ -633,7 +645,7 @@ font-size: 14px;
   padding: 2rem;
   text-transform: uppercase;
   margin-left: -16vw;
-  background-image: url('../images/remake-page-heading-bg.png');
+  /* background-image: url('../images/remake-page-heading-bg.png'); */
   background-size: 100% 30%;
   background-repeat: no-repeat;
 }

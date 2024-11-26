@@ -44,8 +44,6 @@ body.dark-mode .navbar {
 body.dark-mode footer {
     background-color: #1a1a1a;
 }
-
-
   
 
 .remake-page-left{
@@ -341,11 +339,11 @@ footer{
     margin-top: 0;
 }
 
-@media screen and (min-width: 2000px) {
+/* @media screen and (min-width: 2000px) {
     html{
         zoom: 125%;
     }
-}
+} */
 @media(max-width:1430px){
     .audio-card audio {
         width: 14rem;
