@@ -77,9 +77,13 @@ body{
     color: #e0e0e0;
     border: 1px solid #444;
 }
+
 .subject-dropdown{
     font-size: 14px;
     padding: 16px 4px;
+}
+.subject-dropdown option{
+    color: #1e1e1e;
 }
 .field label {
     display: block;
