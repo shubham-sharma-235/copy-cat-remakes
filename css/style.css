@@ -542,6 +542,7 @@ font-size: 14px;
   .hero-section{
       height: 180vh;
       padding-bottom: 2rem;
+      box-shadow: none;
   }
   .hero-section h6{
       padding: 8px 12px;

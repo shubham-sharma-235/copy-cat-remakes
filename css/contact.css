@@ -182,7 +182,21 @@ body{
         width: 100%;
     }
 }
-
+@media(max-width:1220px){
+    .contact-section{
+        background-size: 180%;
+    }
+}
+@media(max-width:700px){
+    .contact-section{
+        background-size: 280%;
+    }
+}
+@media(max-width:500px){
+    .contact-section{
+        background-size: 500%;
+    }
+}
 @media(max-width:720px){
     .contact-container {
         max-width: 94vw;
@@ -191,6 +205,7 @@ body{
         padding: 1.6rem;
         border: 1px solid #444;
     }
+   
 }
 
 footer {

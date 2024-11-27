@@ -334,6 +334,7 @@ li{
         flex-direction: column;
         text-align: center;
         height: 100vh;
+        box-shadow: none;
     }
 
     .hero-left {
