@@ -27,8 +27,8 @@
             </a>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="./index.html">All Products</a></li>
-            <li><a href="./our-remakes.html">Our Remakes</a></li>
+            <li><a href="./index.html">More Products</a></li>
+            <li><a href="./our-remakes.html">Remakes</a></li>
             <li><a class="active" href="./contact.html">Contact</a></li>
             <button class="toggle-button" id="dark-mode-toggle">Enable Dark Mode</button>
 
@@ -49,11 +49,11 @@
             <p>Have a question, request, or feedback?</p>
             <p>Drop us a line, and we'll get back to you soon.</p>
 
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="myForm">
                 <input type="hidden" name="access_key" value="2adfd282-7259-4b6a-bb5f-a4a092b93dca">
                 <div class="name-fields">
                     <div class="field">
-                        <label for="firstName">Full Name</label>
+                        <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" required>
                     </div>
                     <div class="field">
@@ -71,7 +71,7 @@
                 <select class="subject-dropdown" name="subject issue" id="subject_input" required>
                   <option disabled hidden selected>Select</option>
                   <option value="technical-issue">I’ve encountered a technical issue</option>
-                  <option value="sell-products">Provide details about your product</option>
+                  <option value="sell-products">I want to sell my products on your website</option>
                   <option value="other">Other</option>
                 </select>
             
@@ -88,7 +88,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" id="submit">Send</button>
             </form>
         </div>
     </div>
@@ -147,6 +147,14 @@
                 toggleButton.textContent = 'Enable Dark Mode';
             }
         });
+    </script>
+    <script>
+        const submitBtn = document.querySelector('#submit');
+        const contactForm = document.querySelector('.contact-form');
+
+        contactForm.addEventListener('submit',()=>{
+            contactForm.reset();
+        })
     </script>
     <!-- ------------------------------ -->
 </body>

@@ -39,8 +39,8 @@
             </a>
         </div>
         <ul class="nav-links" id="navLinks">
-          <li><a class="active" href="./index.html">All Products</a></li>
-          <li><a href="./our-remakes.html">Our Remakes</a></li>
+          <li><a class="active" href="./index.html">More Products</a></li>
+          <li><a href="./our-remakes.html">Remakes</a></li>
           <li><a href="./contact.html">Contact</a></li>
           <button class="toggle-button" id="dark-mode-toggle">Enable Dark Mode</button>
         </ul>
@@ -56,11 +56,13 @@
 
     <div class="hero-section">
         <div class="hero-left">
-            <video autoplay muted loop>
+            <div class="loading-spinner" id="loadingSpinner"></div>
+            <video id="heroVideo" autoplay muted loop>
                 <source src="./video/more-product-page-hero-video.webm" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
+    
         <div class="hero-right">
             <div class="hero-section-heading">
                 <h2>Latest <br>Pack:</h2>
@@ -162,7 +164,7 @@
         </div>
     
         <div id="content-container">
-            <div id="container-1" class="content">
+            <div id="container-1" class="content active"  style="display: flex;">
 
                 <div class="product-conatainer">
 
@@ -277,26 +279,49 @@
 
     <script>
         function showContainer(containerNumber) {
-            // Hide all containers
-            const containers = document.querySelectorAll('.content');
-            containers.forEach(container => container.style.display = 'none');
-
-            // Remove active class from all buttons
-            const buttons = document.querySelectorAll('#button-container button');
-            buttons.forEach(button => button.classList.remove('active-button'));
-
-            // Show the selected container
+        // Hide all containers with a fade-out effect
+        const containers = document.querySelectorAll('.content');
+            containers.forEach(container => {
+                if (container.classList.contains('active')) {
+                    container.classList.remove('active'); // Remove the active class for fade-out
+                    setTimeout(() => {
+                        container.style.display = 'none'; // Delay hiding until fade-out completes
+                    }, 500); // Match the CSS transition duration (0.5s)
+                }
+            });
+        
+            // Show the selected container with a fade-in effect
             const selectedContainer = document.getElementById(`container-${containerNumber}`);
             if (selectedContainer) {
-                selectedContainer.style.display = 'flex';
+                // If the container is already visible, hide it and reset the animation
+                if (selectedContainer.style.display === 'flex') {
+                    selectedContainer.classList.remove('active'); // Remove active to start fade-out
+                    setTimeout(() => {
+                        selectedContainer.style.display = 'none'; // Temporarily hide the container
+                        setTimeout(() => {
+                            selectedContainer.style.display = 'flex'; // Show it again
+                            setTimeout(() => {
+                                selectedContainer.classList.add('active'); // Trigger fade-in animation
+                            }, 10); // Small delay to allow DOM to register
+                        }, 10); // Delay before showing again
+                    }, 500); // Fade-out duration
+                } else {
+                    selectedContainer.style.display = 'flex';
+                    setTimeout(() => selectedContainer.classList.add('active'), 10); // Trigger fade-in animation
+                }
             }
-
-            // Add active class to the clicked button
+        
+            // Update button active state
+            const buttons = document.querySelectorAll('#button-container button');
+            buttons.forEach(button => button.classList.remove('active-button'));
+        
             const activeButton = document.getElementById(`button-${containerNumber}`);
             if (activeButton) {
                 activeButton.classList.add('active-button');
             }
         }
+        
+        
 
         const toggleButton = document.getElementById('dark-mode-toggle');
         const body = document.body;
@@ -318,6 +343,21 @@
                 toggleButton.textContent = 'Enable Dark Mode';
             }
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("heroVideo");
+            const loadingSpinner = document.getElementById("loadingSpinner");
+        
+            video.addEventListener("canplaythrough", function () {
+                // Hide the spinner and show the video when it's ready to play
+                loadingSpinner.style.display = "none"; // Hide spinner
+                video.style.visibility = "visible";    // Show video
+            });
+        
+            // Ensure video is loaded and ready for play
+            video.load();
+        });
+
     </script>
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
