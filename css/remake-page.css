@@ -339,11 +339,11 @@ footer{
     margin-top: 0;
 }
 
-@media screen and (min-width: 2000px) {
+/* @media screen and (min-width: 2000px) {
     html{
         zoom: 120%;
     }
-}
+} */
 @media(max-width:1430px){
     .audio-card audio {
         width: 14rem;

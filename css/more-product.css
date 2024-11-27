@@ -530,9 +530,17 @@ li{
   font-size: 14px;
 }
 
-@media screen and (min-width: 2000px) {
+/* @media screen and (min-width: 2000px) {
     html{
         zoom: 120%;
+    }
+} */
+@media (min-width: 2000px) {
+    .main-container {
+        max-width: 1440px; 
+        margin: 0 auto; 
+        background-color: white; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.01); 
     }
 }
 @media(max-width:1350px){

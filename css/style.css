@@ -806,13 +806,13 @@ footer a:hover{
   font-size: 14px;
 }
 
-@media screen and (min-width: 2000px) {
+/* @media screen and (min-width: 2000px) {
   html{
       zoom: 120%;
       max-width: 100%;
       overflow-x: hidden;
   }
-}
+} */
 
 @media(max-width:1300px){
   .product-card {
