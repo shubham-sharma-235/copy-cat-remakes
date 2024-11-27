@@ -534,8 +534,8 @@ li{
         zoom: 120%;
     }
 } */
-@media (min-width: 1650px) {
-    .main {
+@media (min-width: 1800px) {
+    /* .main {
         max-width: 1240px; 
         margin: 0 auto; 
         background-color: white; 
@@ -544,13 +544,15 @@ li{
     .hero-section {
         height: 54vh;
         margin-top: 9vh;
-        /* background-color: rgb(242, 240, 240); */
     }
     .hero-right{
         transform: scale(.85);
     }
     .product-conatainer {
         transform: scale(.75);
+    } */
+    body{
+        zoom: 125%;
     }
 }
 @media(max-width:1350px){
