@@ -552,10 +552,10 @@ li{
         transform: scale(.75);
     } */
     body{
-        zoom: 110%;
+        zoom: 100%;
     }
     .hero-section{
-        height: 50vh;
+        height: 54vh;
     }
 }
 @media(max-width:1350px){
