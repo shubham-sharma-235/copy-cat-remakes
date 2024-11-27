@@ -534,7 +534,7 @@ li{
         zoom: 120%;
     }
 } */
-@media (min-width: 1700px) {
+@media (min-width: 1780px) {
     .main {
         max-width: 1240px; 
         margin: 0 auto; 
@@ -548,6 +548,9 @@ li{
     }
     .hero-right{
         transform: scale(.85);
+    }
+    .product-conatainer {
+        transform: scale(.75);
     }
 }
 @media(max-width:1350px){
