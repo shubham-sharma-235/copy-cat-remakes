@@ -806,13 +806,22 @@ footer a:hover{
   font-size: 14px;
 }
 
-/* @media screen and (min-width: 2000px) {
+@media screen and (min-width: 2000px) {
+  .hero-right{
+    transform: scale(.8);
+  }
+  .hero-section{
+    height: 55vh;
+  }
   html{
       zoom: 120%;
       max-width: 100%;
       overflow-x: hidden;
   }
-} */
+  .product-conatainer {
+    transform: scale(.8);
+  }
+}
 
 @media(max-width:1300px){
   .product-card {
