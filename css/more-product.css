@@ -534,7 +534,7 @@ li{
         zoom: 120%;
     }
 } */
-@media (min-width: 1780px) {
+@media (min-width: 1480px) {
     .main {
         max-width: 1240px; 
         margin: 0 auto; 
@@ -542,7 +542,7 @@ li{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.01); 
     }
     .hero-section {
-        height: 25.5vw;
+        height: 60vh;
         margin-top: 9vh;
         /* background-color: rgb(242, 240, 240); */
     }
