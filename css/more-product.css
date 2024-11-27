@@ -555,7 +555,7 @@ li{
         zoom: 100%;
     }
     .hero-section{
-        height: 54vh;
+        height: 100vh;
     }
 }
 @media(max-width:1350px){
