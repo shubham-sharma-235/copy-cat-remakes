@@ -56,11 +56,13 @@
 
     <div class="hero-section">
         <div class="hero-left" data-aos="fade-up" data-aos-duration="300">
-            <video autoplay muted loop>
-                <source src="./video/more-product-page-hero-video.webm" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div> 
+          <div class="loader" id="loader"></div> <!-- Loader -->
+          <video id="hero-video" autoplay muted loop>
+              <source src="./video/more-product-page-hero-video.webm" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+    
     
     
         <div class="hero-right">
@@ -344,19 +346,10 @@
             }
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const video = document.getElementById("heroVideo");
-            const loadingSpinner = document.getElementById("loadingSpinner");
-        
-            // Use the "loadeddata" event for better compatibility
-            video.addEventListener("loadeddata", function () {
-                loadingSpinner.style.display = "none"; // Hide the spinner
-                video.style.visibility = "visible";    // Show the video
-            });
-        
-            // For additional safety, load the video right after DOM is ready
-            video.load();
+        document.getElementById('hero-video').addEventListener('loadeddata', function() {
+          document.getElementById('loader').style.display = 'none'; // Hide loader when the video is loaded
         });
+
         
         
     </script>
