@@ -57,11 +57,12 @@
     <div class="hero-section">
         <div class="hero-left">
             <div class="loading-spinner" id="loadingSpinner"></div>
-            <video id="heroVideo" autoplay muted loop>
-                <source src="./video/more-product-page-hero-video.webm" type="video/mp4">
+            <video id="heroVideo" autoplay muted loop preload="auto">
+                <source src="./video/more-product-page-hero-video.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
+    
     
         <div class="hero-right">
             <div class="hero-section-heading">
@@ -168,7 +169,7 @@
 
                 <div class="product-conatainer">
 
-                    <a href="./textured-organics.html" data-aos="fade-up" data-aos-duration="300">
+                    <a href="./textured-organics.html" data-aos="fade-up" data-aos-duration="300" data-aos-offset="90">
                       <div class="product-card container" style="border: none;">
                         <img style="border: none;" src="./images/product-images/product-one-img-withoud-bg-2.png" alt="">
                         
@@ -186,7 +187,7 @@
         
                     <!-- --------------------------- -->
         
-                    <a href="./free-texture-pack.html" data-aos="fade-up" data-aos-duration="600">
+                    <a href="./free-texture-pack.html" data-aos="fade-up" data-aos-duration="600" data-aos-offset="90">
                       <div class="product-card container" style="border: none;">
                         <img style="border: none;" src="./images/product-images/product-two-img-withoud-bg-2.png" alt="">
                         
@@ -286,7 +287,7 @@
                     container.classList.remove('active'); // Remove the active class for fade-out
                     setTimeout(() => {
                         container.style.display = 'none'; // Delay hiding until fade-out completes
-                    }, 500); // Match the CSS transition duration (0.5s)
+                    }, 300); // Match the CSS transition duration (0.5s)
                 }
             });
         
@@ -348,16 +349,17 @@
             const video = document.getElementById("heroVideo");
             const loadingSpinner = document.getElementById("loadingSpinner");
         
-            video.addEventListener("canplaythrough", function () {
-                // Hide the spinner and show the video when it's ready to play
-                loadingSpinner.style.display = "none"; // Hide spinner
-                video.style.visibility = "visible";    // Show video
+            // Use the "loadeddata" event for better compatibility
+            video.addEventListener("loadeddata", function () {
+                loadingSpinner.style.display = "none"; // Hide the spinner
+                video.style.visibility = "visible";    // Show the video
             });
         
-            // Ensure video is loaded and ready for play
+            // For additional safety, load the video right after DOM is ready
             video.load();
         });
-
+        
+        
     </script>
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
