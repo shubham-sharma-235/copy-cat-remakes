@@ -554,6 +554,9 @@ li{
     /* body{
         zoom: 100%;
     } */
+     .main{
+        zoom: 125%;
+     }
     .hero-section{
         height: 56vh;
         margin-top: 4vw;
