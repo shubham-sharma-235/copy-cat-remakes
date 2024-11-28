@@ -556,7 +556,17 @@ li{
     } */
     .hero-section{
         height: 56vh;
-        margin-top: 6.5vw;
+        margin-top: 4vw;
+        transform: scale(1.1);
+    }
+    .hero-left{
+        margin-bottom: -12px;
+    }
+    footer{
+        transform: scale(1.1);
+    }
+    #button-sontainer{
+        margin: 4rem;
     }
 }
 @media(max-width:1350px){
