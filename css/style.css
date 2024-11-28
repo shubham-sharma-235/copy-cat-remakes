@@ -155,17 +155,18 @@ li{
   max-width: 98.9rem;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    background-color: #fff;
-    z-index: 200;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-family: 'NavbarFont';
-    border-bottom: 3px solid var(--midnight-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #fff;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  font-family: 'NavbarFont';
+  border-bottom: 3px solid var(--midnight-blue);
 }
 
 .logo {
@@ -523,6 +524,41 @@ font-family: 'LatestRemakeText-DollarSign';
 font-size: 14px;
 }
 
+@media (min-width: 1800px) {
+  /* .main {
+      max-width: 1240px; 
+      margin: 0 auto; 
+      background-color: white; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.01); 
+  }
+  .hero-section {
+      height: 54vh;
+      margin-top: 9vh;
+  }
+  .hero-right{
+      transform: scale(.85);
+  }
+  .product-conatainer {
+      transform: scale(.75);
+  } */
+  /* body{
+      zoom: 100%;
+  } */
+  .hero-section{
+      height: 56vh;
+      margin-top: 4vw;
+      transform: scale(1.1);
+  }
+  .hero-left{
+      margin-bottom: -12px;
+  }
+  footer{
+      transform: scale(1.1);
+  }
+  #button-sontainer{
+      margin: 4rem;
+  }
+}
 @media(max-width:1350px){
   .hero-section-heading h2 br{
       display: none;
