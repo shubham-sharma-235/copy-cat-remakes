@@ -523,7 +523,6 @@ border-left: 2px solid #fff;
 font-family: 'LatestRemakeText-DollarSign';
 font-size: 14px;
 }
-
 @media (min-width: 1800px) {
   /* .main {
       max-width: 1240px; 
@@ -545,7 +544,7 @@ font-size: 14px;
       zoom: 100%;
   } */
    .main{
-    zoom: 125%;
+      zoom: 100%;
    }
   .hero-section{
       height: 56vh;
@@ -562,6 +561,7 @@ font-size: 14px;
       margin: 4rem;
   }
 }
+
 @media(max-width:1350px){
   .hero-section-heading h2 br{
       display: none;
