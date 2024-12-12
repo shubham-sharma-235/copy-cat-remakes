@@ -1,0 +1,7 @@
+1. Open Vital
+
+2. Right-click on the preset name bar at the top of the window
+
+3. Select "Open External Preset" 
+
+4. Locate a preset file from the "Presets" archive. 
