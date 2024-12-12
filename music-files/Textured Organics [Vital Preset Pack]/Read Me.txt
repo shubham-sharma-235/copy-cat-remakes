@@ -1,0 +1,25 @@
+These presets were made using Vital 1.5.5  
+
+
+
+How to Install:
+
+   1. Open Vital [Official 1.5.5 download link: https://account.vital.audio/basic]
+
+   2. Right-click on the preset browser tab
+
+   3. From the dropdown menu, select "Import Bank"
+
+   4. Locate the "Textured Models.vitalbank" file from this archive 
+
+
+Don't forget to read the descriptions to the presets; they can be helpful!
+
+Thank you for purchasing this pack, Enjoy! :) 
+
+
+
+P.S - In case you've encountered an issue with the .vitalbank file, this folder contains a .zip archive named 'Presets' 
+       You can install the presets manually from there by using the 'Open External Preset' feature in Vital.
+
+
