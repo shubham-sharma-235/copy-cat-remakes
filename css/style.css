@@ -120,6 +120,7 @@ body.dark-mode footer {
 }
 body.dark-mode .hero-section {
   border-bottom: 3px solid #424242;
+  box-shadow: inset -20px 1px 40px 1px rgba(255, 255, 255, 0.2);
 }
 
 .toggle-button {
@@ -286,8 +287,7 @@ li{
   margin-top: 9vh;
   /* background-color: rgb(242, 240, 240); */
   width: 100%;
-  /* box-shadow: inset -20px 1px 30px 20px rgba(0, 0, 0, 0.6); */
-  box-shadow: inset -20px 1px 40px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset -20px 1px 30px 20px rgba(0, 0, 0, 0.6);
 }
 
 .download-container,.hero-section {
