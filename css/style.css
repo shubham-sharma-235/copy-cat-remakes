@@ -120,7 +120,7 @@ body.dark-mode footer {
 }
 body.dark-mode .hero-section {
   border-bottom: 3px solid #424242;
-  box-shadow: inset -20px 1px 40px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset -20px 1px 40px 10px rgba(255, 255, 255, 0.2);
 }
 
 .toggle-button {
@@ -548,7 +548,7 @@ font-size: 14px;
       zoom: 100%;
   } */
    .main{
-      zoom: 100%;
+      zoom: 125%;
    }
   .hero-section{
       height: 56vh;
@@ -560,6 +560,9 @@ font-size: 14px;
   }
   footer{
       transform: scale(1.1);
+    }
+    .navbar{
+      transform: scale(.9);
   }
   #button-sontainer{
       margin: 4rem;
