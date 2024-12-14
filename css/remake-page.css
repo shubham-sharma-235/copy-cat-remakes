@@ -354,7 +354,7 @@ footer{
 }
 @media(max-width:1300px){
     .audio-card audio {
-        width: 18rem;
+        width: 16rem;
         height: 2rem;
     }
     .demo-audio-section{
@@ -420,12 +420,15 @@ footer{
     }
     .buy-button button{
         /* display: none; */
-        height: 3.2rem;
+        height: 3rem;
         color: #fff;
         font-size: 1.2rem;
-        width: 10rem;
-        background-color: #000;
+        background-color: #474747;
         margin: 1rem;
+        width: 80%;
+        border: none;
+        margin-left: 2rem;
+        border-radius: 4px;
     }
 }
 

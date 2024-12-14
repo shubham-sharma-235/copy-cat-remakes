@@ -10,7 +10,9 @@ hamburger.addEventListener('click', () => {
 var sidebar = document.querySelector('#sidebar')
 var buyBtn = document.querySelector('#buy-btn');
 
-buyBtn.addEventListener('click',()=>{
-    sidebar.style.display='block';
-})
+var remakeDescriptionSection = document.querySelector('.remake-description');
 
+buyBtn.addEventListener('click',()=>{
+    sidebar.style.display = 'block';
+    remakeDescriptionSection.style.display = 'none';
+})
