@@ -568,26 +568,26 @@ font-size: 14px;
       margin: 4rem;
   }
   .hero-section-heading h2{
-    font-size: 2.8vw;
+    font-size: 2.8vw!important;
   }
   .hero-section-latest-pack h3{
-    font-size: 1.2vw;
+    font-size: 1.2vw!important;
   }
   .hero-section-latest-pack h5{
-    font-size: .6vw;
+    font-size: .6vw!important;
   }
 
   .hero-section-latest-pack h4{
-    font-size: 1vw;
+    font-size: 1vw!important;
   }
 
   .filter-container{
-    margin-top: 6rem;
+    margin-top: 6rem!important;
   }
 
   .hero-section-latest-pack-img{
-    height: 8vw;
-    width: 8vw;
+    height: 8vw!important;
+    width: 8vw!important;
   }
 
 }
