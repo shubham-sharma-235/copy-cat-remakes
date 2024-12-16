@@ -568,10 +568,11 @@ font-size: 14px;
       margin: 4rem;
   }
   .hero-right{
-    margin-top: 3rem!important;
+    /* margin-top: 3rem!important; */
   }
   .hero-section-heading h2{
     font-size: 3vw!important;
+    margin-top: 1.4rem;
   }
   .hero-section-latest-pack h3{
     font-size: 1.2vw!important;
@@ -593,7 +594,7 @@ font-size: 14px;
     width: 8vw!important;
   }
   .hero-section-latest-pack{
-    margin-bottom: 2rem!important;
+    /* margin-bottom: 2rem!important; */
   }
 
 }
