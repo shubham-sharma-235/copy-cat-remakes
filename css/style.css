@@ -585,9 +585,12 @@ font-size: 14px;
     margin-top: 6rem!important;
   }
 
-  .hero-section-latest-pack-img{
+  .hero-section-latest-pack-img img{
     height: 8vw!important;
     width: 8vw!important;
+  }
+  .hero-section-latest-pack{
+    margin-bottom: 2rem!important;
   }
 
 }
