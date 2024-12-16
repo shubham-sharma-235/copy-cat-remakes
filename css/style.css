@@ -552,7 +552,7 @@ font-size: 14px;
    }
   .hero-section{
       height: 56vh;
-      margin-top: 6 vw;
+      margin-top: 6vw;
       transform: scale(1.1);
   }
   .hero-left{
@@ -561,12 +561,35 @@ font-size: 14px;
   footer{
       transform: scale(1.1);
     }
-    .navbar{
+    /* .navbar{
       transform: scale(.9);
-  }
+  } */
   #button-sontainer{
       margin: 4rem;
   }
+  .hero-section-heading h2{
+    font-size: 2.8vw;
+  }
+  .hero-section-latest-pack h3{
+    font-size: 1.2vw;
+  }
+  .hero-section-latest-pack h5{
+    font-size: .6vw;
+  }
+
+  .hero-section-latest-pack h4{
+    font-size: 1vw;
+  }
+
+  .filter-container{
+    margin-top: 6rem;
+  }
+
+  .hero-section-latest-pack-img{
+    height: 8vw;
+    width: 8vw;
+  }
+
 }
 
 @media(max-width:1350px){

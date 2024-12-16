@@ -341,7 +341,7 @@ footer{
 
 @media screen and (min-width: 2000px) {
     html{
-        zoom: 120%;
+        zoom: 100%;
     }
 }
 
