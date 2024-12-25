@@ -43,17 +43,12 @@
 
         <div>
           <ul class="nav-links" id="navLinks">
-            <li><a class="active" href="./index.html">Presents</a></li>
+            <li><a href="./index.html">Presents</a></li>
             <li><a href="./our-remakes.html">Remakes</a></li>
-            <li><a href="./sample.html">Samples</a></li>
+            <li><a class="active" href="./sample.html">Samples</a></li>
             <li><a href="./pages/contact.html">Contact</a></li>
           </ul>
         </div>
-      </div>
-
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <div id="dropdown"></div>
       </div>
 
       <div>
@@ -68,10 +63,9 @@
             <i class='bx bxl-twitter'></i>
           </a>
         </div>
-      
+
         <button class="toggle-button" id="dark-mode-toggle">Enable Dark Mode</button>
       </div>
-
       
       <div class="hamburger" id="hamburger">
         <span class="bar"></span>
@@ -116,14 +110,14 @@
                   </div>
                  </a>
                  <div class="sale-tag">
-                     <span>25% off our newest product for a limited time</span>
+                     <span>All newly added products receive a 25% discount for a limited period of time</span>
                  </div>
               </div>
           </div>
           <h6 data-aos="fade-up" data-aos-duration="750">Recent packs:</h6>
           <div class="recent-remakes" data-aos="fade-up" data-aos-duration="1000">
 
-              <div class="recent-packs-card">
+              <!-- <div class="recent-packs-card">
                   <a href="./textured-organics.html" style="color: #000;">
                     <div class="recent-remake-card container">
                       <div class="recent-remake-img">
@@ -141,7 +135,7 @@
                       </div>
                   </div>
                   </a>
-              </div>
+               </div> -->
               <div class="recent-packs-card">
                   <a href="./free-texture-pack.html" style="color: #000;">
                     <div class="recent-remake-card container">
@@ -160,7 +154,7 @@
                       </div>
                     </div>
                   </a>
-              </div>
+               </div>
               <!-- <div class="recent-packs-card">
                   <div class="recent-remake-card">
                       <div class="recent-remake-img">
@@ -186,11 +180,10 @@
 
   <div class="filter-container">
       <div id="button-container">
-          <button id="button-1" class="active-button" onclick="showContainer(1)">All Products</button>
-          <button id="button-2" onclick="showContainer(2)">Vital Presets</button>
-          <button id="button-3" onclick="showContainer(3)">Serum Presets</button>
-          <button id="button-4" onclick="showContainer(4)">Sylenth Presets</button>
-          <button id="button-5" onclick="showContainer(5)">Sample Packs</button>
+          <button id="button-1" class="active-button" onclick="showContainer(1)">All Samples</button>
+          <button id="button-2" onclick="showContainer(2)">Sample Packs</button>
+          <button id="button-3" onclick="showContainer(3)">Vocal Packs</button>
+          <button id="button-4" onclick="showContainer(4)">Texture Packs</button>
       </div>
   
       <div id="content-container">
@@ -198,22 +191,6 @@
 
               <div class="product-conatainer">
 
-                  <a href="./textured-organics.html" data-aos="fade-up" data-aos-duration="300" data-aos-offset="90">
-                    <div class="product-card container" style="border: none;">
-                      <img style="border: none;" src="./images/product-images/product-one-img-withoud-bg-2.png" alt="">
-                      
-                      <div class="product-card-content">
-                        <h2>Textured Organics</h2>
-                        <p>Vital Preset Pack</p>
-                      </div>
-                      
-                      <div class="right-btn">
-                        <span> $59.99 </span>
-                        <img src="./images/menu-icon.png" alt="">
-                      </div>
-                    </div>
-                  </a>
-      
                   <!-- --------------------------- -->
       
                   <a href="./free-texture-pack.html" data-aos="fade-up" data-aos-duration="600" data-aos-offset="90">
@@ -410,52 +387,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script>
-
-    // List of products with associated URLs
-    const products = [
-      { name: "Textured Organics", url: "./textured-organics.html" },
-      { name: "Texture Pack", url: "./free-texture-pack.html" }
-    ];
-
-    const searchInput = document.getElementById("searchInput");
-    const dropdown = document.getElementById("dropdown");
-
-    searchInput.addEventListener("input", function () {
-      const query = this.value.toLowerCase();
-      dropdown.innerHTML = ""; // Clear previous suggestions
-
-      if (query) {
-        const matches = products.filter(product =>
-          product.name.toLowerCase().includes(query)
-        );
-
-        if (matches.length > 0) {
-          dropdown.style.display = "block";
-          matches.forEach(match => {
-            const div = document.createElement("div");
-            div.textContent = match.name;
-            div.addEventListener("click", function () {
-              // Redirect to the product page
-              window.location.href = match.url;
-            });
-            dropdown.appendChild(div);
-          });
-        } else {
-          dropdown.style.display = "none";
-        }
-      } else {
-        dropdown.style.display = "none";
-      }
-    });
-
-    // Hide dropdown when clicking outside
-    document.addEventListener("click", function (e) {
-      if (!dropdown.contains(e.target) && e.target !== searchInput) {
-        dropdown.style.display = "none";
-      }
-    });
     </script>
 </body>
 </html>

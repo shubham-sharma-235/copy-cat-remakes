@@ -16,3 +16,8 @@ buyBtn.addEventListener('click',()=>{
     sidebar.style.display = 'block';
     remakeDescriptionSection.style.display = 'none';
 })
+
+// ----------------------------------------------------
+
+
+

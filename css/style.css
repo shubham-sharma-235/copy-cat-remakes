@@ -51,6 +51,11 @@ html{
   src: url('../copycat_font/product-list/price-and-dollar-sign-product-list.ttf'); 
 }
 
+@font-face {
+  font-family: 'FontFooterLinks'; 
+  src: url('../copycat_font/font-footer.ttf'); 
+}
+
 
 :root{ 
     
@@ -160,7 +165,7 @@ li{
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-  background-color: #fff;
+  background-color: #171717!important;
   z-index: 200;
   position: fixed;
   top: 0;
@@ -177,37 +182,36 @@ li{
   margin-top: 6px;
 }
 .logo a{
-  color: #141414;
-
+  color: #fff!important;
 }
 .nav-links {
     list-style: none;
     display: flex;
-    margin-left: -10rem;
     margin-bottom: .4rem;
 }
 .nav-links .active{
-  border-bottom: 3px solid #204873;
+  border-bottom: 3px solid #fff!important;
 }
 .nav-links li {
-    margin: 0 50px;
+    margin: 0 5px;
 }
 
 .nav-links li a {
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 16px;
-    padding: 8px;
     letter-spacing: 1px;
-    font-weight: 800;
-    color: #141414;
+    font-weight: 100!important;
+    color: #fff!important;
     transition: all ease-in-out .1s;
     border-bottom: 2px solid transparent;
 }
 
 .nav-links li a:hover {
     transition: all ease-in-out .1s;
-    color: #204873;
-    border-bottom: 3px solid #204873;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    background-color: #212121;
 }
 
 .hover-underline-animation {
@@ -246,6 +250,33 @@ li{
     height: 3px;
     background-color: #141414;
     margin: 4px;
+}
+
+#searchInput {
+  height: 4.4rem;
+  margin: -14px 0;
+  width: 24rem;
+  max-width: 300px;
+  border: none;
+  background-color: #2423238f;
+  padding: 0 10px;
+  color: #fff;
+}
+#dropdown {
+  border: 1px solid #ccc;
+  max-width: 300px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+}
+#dropdown div {
+  padding: 10px;
+  cursor: pointer;
+}
+#dropdown div:hover {
+  background-color: #f0f0f0;
 }
 
 /* Responsive styles */
@@ -828,47 +859,57 @@ font-size: 14px;
 footer{
   width: 100%;
   margin-top: 4rem;
-  border-top: 2px solid #424242;
+  border-top: 20px solid #353535;
   padding: 1rem;
+  background-color: #1C1C1C;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* font-family: monospace; */
+  font-family: 'SongTitle-ProductCard';
+}
+.footer-left{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-family: monospace; */
-  font-family: 'SongTitle-ProductCard';
+  border-right: 1px solid #373737;
+  text-transform: uppercase;
 }
-footer h4{
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #888;
-  letter-spacing: 1px;
+.footer-logo img{
+  height: 5.5rem;
+  /* margin-bottom: -10px; */
 }
-footer .sm-icons i{
-  font-size: 1.4rem;
-  padding: 8px;
-  margin: 20px 30px;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #141414;
-  transition: all ease .15s;
-  border: #141414 1px solid;
-  cursor: pointer;
+.footer-sm img{
+  height: 1.4rem;
+  margin: 0px 6px;
 }
-footer .sm-icons i:hover{
-  color: #141414;
-  background-color: #fff;
-  border: #141414 1px solid;
+.footer-ars img{
+  height: 3rem;
 }
-footer a{
-  font-size: 1.4rem;
+
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-links a{
+  font-size: 16px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #DEDEDE;
   font-weight: 600;
-  color: #999;
-  text-decoration: underline;
   transition: all ease-in-out .2s;
+  font-family: 'FontFooterLinks';
+  font-weight: 100;
 }
-footer a:hover{
-  color: #767575;
+.footer-links a:hover{
+  color: #ffffff9e;
 }
+
+
 .footer-bottom{
   display: flex;
   flex-direction: row;

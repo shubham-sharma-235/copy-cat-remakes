@@ -132,8 +132,10 @@ body.dark-mode #button-container .active-button {
     color: #ffffff;
     border: none;
     border-radius: 5px;
+    right: 6rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    border: #cccccc4d 1px solid;
 }
 .toggle-button:hover {
     background-color: #ffffff;
@@ -150,7 +152,7 @@ li{
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    background-color: #fff;
+    background-color: #171717;
     z-index: 200;
     position: fixed;
     top: 0;
@@ -173,20 +175,32 @@ li{
 .nav-links {
     list-style: none;
     display: flex;
-    /* margin-left: -10rem; */
-    margin-bottom: .4rem;
+    /* margin-bottom: .4rem; */
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2rem;
 }
 .nav-links .active{
-  border-bottom: 3px solid #204873;
+  border-bottom: 2px solid #fff;
 }
 .nav-links li {
-    margin: 0 50px;
+    margin: 0 15px;
+}
+.nav-socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-socials i{
+    color: #4d4c4c;
+    font-size: 1.4rem;
+    padding: 0 2px;
 }
 
 .nav-links li a {
     text-decoration: none;
-    font-size: 16px;
-    padding: 8px;
+    font-size: 14px;
+    padding: 26px 4px;
     letter-spacing: 1px;
     font-weight: 800;
     color: var(--primary-black-color);
@@ -195,7 +209,7 @@ li{
 
 .nav-links li a:hover {
     transition: all ease-in-out .1s;
-    color: #204873;
+    color: #fff;
 }
 
 .hover-underline-animation {
