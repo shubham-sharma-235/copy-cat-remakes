@@ -9,7 +9,7 @@
 body{
     font-family: 'SongTitle-ProductCard'; 
 }
-
+/* 
 body.dark-mode .audio-card h4{
     color: #fff;
 }
@@ -44,7 +44,7 @@ body.dark-mode .navbar {
 body.dark-mode footer {
     background-color: #1a1a1a;
 }
-  
+   */
 
 .remake-page-left{
     background-color: #313131;
