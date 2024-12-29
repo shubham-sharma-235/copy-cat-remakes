@@ -16,60 +16,56 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <style>
-      .latest-remakr-prise-span{
-        margin-left: 6rem;
-        font-size: 14px;
-      }
-      .product-conatainer {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-      .product-card {
-        width: 30vw;
-        height: 8vw;
-        justify-content: start;
-      }
-      .product-card-content {
-        margin-left: 1vw;
-      }
-      body.dark-mode .bx-chevron-right {
-       border-left: 2px solid #fff;  
-      }    
-      @media(max-width:600px){
-        .latest-remakr-prise-span{
-          margin-left: 0rem;
+       <style>
+          .product-conatainer {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          @media(max-width:600px){
+          .latest-remakr-prise-span{
+            margin-left: 0rem;
+          }
+          .recent-remake-img {
+            margin-right: 10px;
+            background-color: #e3e3e3;
+          }
+          .product-conatainer {
+            grid-template-columns: 1fr;
+          }
+          .product-card {
+            width: 80vw;
+            height: 20vw;
+          }
+          .hero-section-latest-pack .hero-section-latest-pack-price {
+            width: 60%;
+          }
         }
-        .recent-remake-img {
-          margin-right: 10px;
-          background-color: #e3e3e3;
+        @media screen and (min-width: 2000px) {
+            html{
+                zoom: 100%!important;
+            }
+            .hero-section{
+              height: 55vh;
+              margin-top: 5vw;
+            }
+            .product-section{
+                transform: scale(.8);
+            }
         }
-        .product-conatainer {
-          grid-template-columns: 1fr;
+        .heading-style-one h2{
+          font-size: 1.8vw;
+        }
+        .latest-remakr-prise-span {
+            width: 10rem;
+            margin-left: 6rem;
         }
         .product-card {
-          width: 80vw;
-          height: 20vw;
+            width: 23vw;
+            padding: 12px;
+            justify-content: center;
+            margin: 10px;
+            height: 8.5vw;
         }
-        .hero-section-latest-pack .hero-section-latest-pack-price {
-          width: 60%;
-        }
-      }
-      @media screen and (min-width: 2000px) {
-    html{
-        zoom: 100%!important;
-    }
-    .hero-section{
-      height: 55vh;
-      margin-top: 5vw;
-    }
-    .product-section{
-        transform: scale(.8);
-    }
-}
-.heading-style-one h2{
-  font-size: 1.8vw;
-}
-    </style>
+     </style>
   </head>
   <body>
     <div class="main">
@@ -134,76 +130,92 @@
             <div class="hero-section-heading"  data-aos="fade-up" data-aos-duration="500">
                 <h2>Latest <br>Remakes:</h2>
             </div>
-            <div class="hero-section-latest-pack" data-aos="fade-up" data-aos-duration="700">
-                <div class="hero-section-latest-pack-img">
-                    <img class="remake-cover-black" src="./images/remake-cover-image.png" alt="">
-                </div>
-                <div>
-                   <div>
-                      <h3>???</h3>
-                      <!-- <h5>Artist</h5> -->
-                   </div>
-                   <div style="display: flex;justify-content: space-between;" class="hero-section-latest-pack-price container">
-                      <h4 style="font-size: 18px;font-family: SongTitle-ProductCard;">COMING SOON</h4>
-                      <!-- <h4><s>$24.99</s></h4> -->
-                      <i class='bx bx-menu'></i>
-                   </div>
-                   <div class="sale-tag">
-                       <span>All newly added products receive a 25% discount for a limited period of time</span>
-                   </div>
-                </div>
-            </div>
+
+            <div class="hero-section-latest-pack">
+              <div class="hero-section-latest-pack-img"  data-aos="fade-up" data-aos-duration="700">
+                  <img src="./images/remake-cover-image.png" alt="">
+              </div>
+              <div data-aos="fade-up" data-aos-duration="700">
+                 <div>
+                    <h3>???</h3>
+                 </div>
+                 <a href="./textured-organics.html">
+                  <div class="hero-section-latest-pack-price container">
+                    <div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
+                      <i class='bx bx-cart-alt'></i>
+                      <h4><s>$??.??</s></h4>
+                      <h4>$??.??</h4>
+                    </div>
+                    <i class='bx bx-menu'></i>
+                  </div>
+                 </a>
+                 <div class="sale-tag">
+                     <span>25% off our newest product for a limited time</span>
+                 </div>
+              </div>
+          </div>
+          
             <h6>Recent packs:</h6>
             <div class="recent-remakes" data-aos="fade-up" data-aos-duration="1000">
 
-                <div class="recent-packs-card">
-                    <div class="recent-remake-card container">
-                        <div class="recent-remake-img">
-                            <img src="./images/comming-soon-img-1.png" alt="">
-                        </div>
-                        <div class="recent-remake-content">
-                          <h2>???</h2>
-                        </div>
-                        <div class="latest-remakr-prise-span">
-                          <span style="font-family: SongTitle-ProductCard;font-weight: 600;"> 
-                            Coming Soon</span>
-                          </span>
-                          <i class='bx bx-chevron-right'></i>
-                        </div>
+              <div class="recent-packs-card">
+                <a href="./textured-organics.html">
+                  <div class="recent-remake-card" >
+                    <div class="recent-remake-img">
+                        <img src="./images/comming-soon-img-1.png" alt="">
+                    </div>
+                    <div class="recent-remake-content">
+                      <h2>???</h2>
+                    </div>
+                    <div class="latest-remakr-prise-span">
+                      <i class='bx bx-cart-alt'></i>
+                      <span>
+                        <span class="recent-remake-price">$??.??</span>
+                      </span>
+                      <i class='bx bx-menu'></i>
                     </div>
                 </div>
-                <div class="recent-packs-card">
-                    <div class="recent-remake-card container">
-                        <div class="recent-remake-img">
-                            <img src="./images/comming-soon-img-2.png" alt="">
-                        </div>
-                        <div class="recent-remake-content">
-                          <h2>???</h2>
-                        </div>
-                        <div class="latest-remakr-prise-span">
-                          <span style="font-family: SongTitle-ProductCard;font-weight: 600;"> 
-                            Coming Soon</span>
-                          </span>
-                          <i class='bx bx-chevron-right'></i>
-                        </div>
-                      </div>
-                </div>
-                <div class="recent-packs-card">
-                    <div class="recent-remake-card container">
-                        <div class="recent-remake-img">
-                            <img src="./images/comming-soon-img-3.png" alt="">
-                        </div>
-                        <div class="recent-remake-content">
-                          <h2>???</h2>
-                        </div>
-                        <div class="latest-remakr-prise-span">
-                          <span style="font-family: SongTitle-ProductCard;font-weight: 600;"> 
-                            Coming Soon</span>
-                          </span>
-                          <i class='bx bx-chevron-right'></i>
-                        </div>
-                      </div>
-                </div>
+                </a>
+            </div>
+            <div class="recent-packs-card">
+                <a href="./free-texture-pack.html">
+                  <div class="recent-remake-card container">
+                    <div class="recent-remake-img">
+                        <img src="./images/comming-soon-img-2.png" alt="">
+                    </div>
+                    <div class="recent-remake-content">
+                      <h2>???</h2>
+                    </div>
+                    <div class="latest-remakr-prise-span black-container price-margin">
+                      <i class='bx bx-cart-alt'></i>
+                      <span>
+                        <s><span class="recent-remake-price">$??.??</span></s>
+                      </span>
+                      <i class='bx bx-menu'></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <div class="recent-packs-card">
+                <a href="./free-texture-pack.html">
+                  <div class="recent-remake-card container">
+                    <div class="recent-remake-img">
+                        <img src="./images/comming-soon-img-3.png" alt="">
+                    </div>
+                    <div class="recent-remake-content">
+                      <h2>???</h2>
+                    </div>
+                    <div class="latest-remakr-prise-span black-container price-margin">
+                      <i class='bx bx-cart-alt'></i>
+                      <span>
+                        <s><span class="recent-remake-price">$??.??</span></s>
+                      </span>
+                      <i class='bx bx-menu'></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+                
             </div>
         </div>
       </div>
@@ -216,54 +228,76 @@
       <div class="product-section">
           <div class="product-conatainer">
             <!-- --------------------------- -->
-            <div class="product-card container"
-                data-aos="fade-up"
-                data-aos-offset="10"
-                data-aos-delay="10"
-                data-aos-duration="400"
-              >
-              <img style="border: none;" src="./images/comming-soon-img-1.png" alt="">
-              
-              <div class="product-card-content">
-                <h2>Coming Soon</h2>
+            <a data-aos="fade-up" data-aos-duration="300" data-aos-offset="90">
+              <div class="product-card container" style="border: none;">
+                <img style="border: none;" src="./images/comming-soon-img-1.png" alt="">
+
+                <div>
+                  <div class="product-card-content">
+                    <h2>Textured Organics</h2>
+                    <p>Vital Preset Pack</p>
+                  </div>
+
+                  <div class="right-btn">
+                    <i class='bx bx-menu' ></i>
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-cart-alt' ></i>
+                    <span></span>
+                    <span></span>
+                    <span> $??.?? </span>
+                  </div>
+                </div>
               </div>
-              
-              <div></div>
-            </div>
+            </a>
 
             <!-- --------------------------- -->
 
-            <div class="product-card container"
-                data-aos="fade-up"
-                data-aos-offset="10"
-                data-aos-delay="10"
-                data-aos-duration="600"
-              >
-              <img style="border: none;" src="./images/comming-soon-img-2.png" alt="">
-              
-              <div class="product-card-content">
-                <h2>Coming Soon</h2>
+            <a data-aos="fade-up" data-aos-duration="300" data-aos-offset="90">
+              <div class="product-card container" style="border: none;">
+                <img style="border: none;" src="./images/comming-soon-img-2.png" alt="">
+
+                <div>
+                  <div class="product-card-content">
+                    <h2>Textured Organics</h2>
+                    <p>Vital Preset Pack</p>
+                  </div>
+
+                  <div class="right-btn">
+                    <i class='bx bx-menu' ></i>
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-cart-alt' ></i>
+                    <span></span>
+                    <span></span>
+                    <span> $??.?? </span>
+                  </div>
+                </div>
               </div>
-              
-              <div></div>
-            </div>
+            </a>
 
             <!-- --------------------------- -->
             
-            <div class="product-card container"
-                data-aos="fade-up"
-                data-aos-offset="10"
-                data-aos-delay="10"
-                data-aos-duration="800"
-              >
-              <img style="border: none;" src="./images/comming-soon-img-3.png" alt="">
-              
-              <div class="product-card-content">
-                <h2>Coming Soon</h2>
+            <a data-aos="fade-up" data-aos-duration="300" data-aos-offset="90">
+              <div class="product-card container" style="border: none;">
+                <img style="border: none;" src="./images/comming-soon-img-3.png" alt="">
+
+                <div>
+                  <div class="product-card-content">
+                    <h2>Textured Organics</h2>
+                    <p>Vital Preset Pack</p>
+                  </div>
+
+                  <div class="right-btn">
+                    <i class='bx bx-menu' ></i>
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-cart-alt' ></i>
+                    <span></span>
+                    <span></span>
+                    <span> $??.?? </span>
+                  </div>
+                </div>
               </div>
-              
-              <div></div>
-            </div>
+            </a>
+
           </div>
       </div>
 
