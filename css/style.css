@@ -357,7 +357,7 @@ input:focus {
   height: 32vw;
   flex-direction: row;
   align-items: center;
-  border-bottom: #0f084b 2px solid;
+  border-bottom: #171717 2px solid;
   margin-top: 9vh;
   /* background-color: rgb(242, 240, 240); */
   width: 100%;
@@ -901,17 +901,19 @@ font-size: 14px;
   font-weight: 100!important;
 }
 .right-btn img{
-  height: 12px;
-  /* font-size: 2rem; */
+  height: 30px;
   border-right: 1px solid #373737;
+  transition: all ease-in-out .2s;
+  margin-right: 0;
+  padding: 6px 8px;
 }
-.right-btn i{
+/* .right-btn i{
   padding: 6px 10px;
   font-size: 18px;
   border-right: 1px solid #373737;
   transition: all ease-in-out .2s;
-}
-.right-btn i:hover{
+} */
+.right-btn img:hover{
   background-color: #373737;
   transition: all ease-in-out .2s;
 }
