@@ -90,10 +90,10 @@ li{
     width: 100%;
     left: 0;
     font-family: 'NavbarFont';
-    border-bottom: 3px solid var(--midnight-blue);
+    border-bottom: 3px solid #1C1C1C;
 }
 
-.logo {
+/* .logo {
   font-family: 'LogoFont';
   font-size: 1.6rem;
   letter-spacing: 2px;
@@ -101,6 +101,9 @@ li{
 }
 .logo a{
     color: var(--primary-black-color);
+} */
+.logo img{
+    height: 2.1rem;
 }
 
 .nav-links {
@@ -124,7 +127,7 @@ li{
     margin: 0 12px;
 }
 .nav-socials i{
-    color: #4d4c4c9c;
+    color: #38373782;
     font-size: 1.4rem;
     padding: 0 2px;
 }

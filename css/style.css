@@ -180,7 +180,7 @@ li{
   width: 100%;
   left: 0;
   font-family: 'NavbarFont';
-  border-bottom: 3px solid var(--midnight-blue);
+  border-bottom: 3px solid #1C1C1C;
 }
 
 .logo {
@@ -382,7 +382,6 @@ input:focus {
   object-fit: cover;
   clip-path: polygon(0 0, 96% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
-
 }
 
 .hero-right {
@@ -935,13 +934,12 @@ footer{
   width: 100%;
   margin-top: 4rem;
   border-top: 20px solid #353535;
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: #1C1C1C;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* font-family: monospace; */
   font-family: 'SongTitle-ProductCard';
 }
 .footer-left{
@@ -951,6 +949,7 @@ footer{
   justify-content: center;
   border-right: 1px solid #373737;
   text-transform: uppercase;
+  padding: 8px;
 }
 .footer-logo img{
   height: 5.5rem;
@@ -971,8 +970,8 @@ footer{
   align-items: center;
 }
 .footer-links a{
-  font-size: 16px;
-  margin: 10px 0;
+  font-size: 12px;
+  margin: 8px 0;
   text-decoration: none;
   color: #DEDEDE;
   font-weight: 600;
