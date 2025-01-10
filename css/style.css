@@ -841,11 +841,11 @@ font-size: 14px;
 .product-card{
   display: flex;
   /* align-items: center; */
-  width: 27vw;
-  padding: 12px;
+  width: 26vw;
+  /* padding: 12px; */
   justify-content: center;
   margin: 10px;
-  height: 8.5vw;
+  height: 9vw;
   transition: all ease-in-out .25s;
   cursor: pointer;
   padding-left: 2px;
@@ -855,7 +855,8 @@ font-size: 14px;
 }
 .product-card img{
   height: 100%;
-  margin-right: 1rem;
+  margin-right: 8px;
+  padding: 6px;
   transition: all ease-in-out .15s;
 }
 
@@ -870,10 +871,12 @@ font-size: 14px;
   font-family: 'product-price-font'; 
 }
 .product-card p{
-  font-size: .8vw;
+  font-size: .9vw;
   margin-bottom: 1rem;
-  color: #5e5e5e;
-  font-family: 'ArtistName-ProductCard';
+  font-weight: 500;
+  padding-top: 2px;
+  color: #959595;
+  font-family: 'product-price-font'; 
 }
 
 .product-card span{
