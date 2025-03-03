@@ -678,7 +678,7 @@ font-size: 14px;
   }
 
   .filter-container{
-    margin-top: 6rem!important;
+    margin-top: 1.7rem!important;
   }
 
   .hero-section-latest-pack-img img{
@@ -1038,6 +1038,18 @@ footer{
 }
 
 @media(max-width:780px){
+  #searchInput {
+    height: 4.2rem;
+    margin: -14px 0;
+    width: 24rem;
+    max-width: 80px;
+  }
+  .nav-right{
+    margin-left: 2.4rem;
+  }
+  .hamburger .bar {
+    color: #fff!important;
+  }
   .toggle-button{
     right: 60px;
     top: 14px;
@@ -1050,6 +1062,15 @@ footer{
     height: 100%;
     object-fit: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .recent-remake-card {
+    border: 1px solid #383838;
+    padding-right: 8px;
+    width: 82vw;
+  }
+  .latest-remakr-prise-span {
+    width: 10rem;
+    font-size: 12px;
   }
 
   .heading-style-one {
@@ -1068,13 +1089,14 @@ footer{
     grid-template-columns: 1fr;
   }
   .product-card{
-    width: 90vw;
+    width: 80vw;
     margin: 1.4rem .8rem;
-    height: 20vw;
+    height: 30vw;
   }
 
   .product-card img {
-    height: 20vw;
+    height: 30vw;
+    margin-right: 12px;
   }
   .right-btn img{
     height: .8rem;
@@ -1092,15 +1114,12 @@ footer{
     font-weight: 800;
   }
 
-  .product-card-content {
-    margin-left: -4vw;
-  }
 
   .product-card h2 {
-    font-size: 4vw;
+    font-size: 3.8vw;
   }
   .product-card p {
-    font-size: 3.4vw;
+    font-size: 3vw;
     margin: 4px 0;
     margin-bottom: 1.6rem;
   }
@@ -1110,14 +1129,19 @@ footer{
   }
 
 
-  footer h4 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    font-weight: 500;
-    letter-spacing: 1px;
+  footer{
+    width: 100%;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 20px solid #353535;
+    /* padding: 1rem; */
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  footer a{
-    font-size: 1.2rem;
-  }
+  .footer-left {
+    border-right: none;
+}
 }
 
