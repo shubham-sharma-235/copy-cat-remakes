@@ -714,10 +714,15 @@ font-size: 14px;
   }
 }
 @media(max-width:690px){
+  .search-icon {
+    height: 4rem;
+    margin-left: -3rem;
+  }
   .hero-section{
       height: 180vh;
       padding-bottom: 2rem;
       box-shadow: none;
+      margin-top: 0;
   }
   .hero-section h6{
       padding: 8px 12px;
