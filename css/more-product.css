@@ -270,6 +270,7 @@ li{
     .hero-section-heading h2 {
         font-size: 5vw;
         padding: 0 12px;
+        color: #fff;
     }
     .recent-remakes {
         max-height: 300px; 

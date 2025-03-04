@@ -775,10 +775,10 @@ font-size: 14px;
       border: 2px solid #141414;
       padding: 6px 20px;
       margin-top: 10px;
-      width: 55%;
+      width: 100%;
       margin-left: 12px;
       margin-bottom: 10px;
-      background-color: #fff;
+      
   }
 
   .hero-section-latest-pack h4{
@@ -1102,25 +1102,25 @@ footer{
     grid-template-columns: 1fr;
   }
   .product-card{
-    width: 80vw;
-    margin: 1.4rem .8rem;
+    width: 96vw;
+    margin: .4Srem .8rem;
     height: 30vw;
   }
 
   .product-card img {
     height: 30vw;
-    margin-right: 12px;
+    margin-right: 2px;
   }
   .right-btn img{
-    height: .8rem;
+    height: 1.6rem;
   }
   .right-btn {
     background-color: #141414;
     color: #fff;
     font-size: 1rem;
-    width: 6rem;
+    width: auto;
     height: 2rem;
-    margin-top: 2rem;
+    margin-top: -10px;
     margin-right: .6rem;
     padding: 2px 0;
     font-family: 'Price-ProductCard';
