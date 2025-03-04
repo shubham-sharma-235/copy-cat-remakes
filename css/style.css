@@ -688,6 +688,14 @@ font-size: 14px;
   .hero-section-latest-pack{
     /* margin-bottom: 2rem!important; */
   }
+  .recent-remakes img {
+    height: 2.8rem;
+  }
+
+  .recent-remake-card {
+    height: 3rem;
+    padding-right: 4px;
+  }
 }
 
 @media(max-width:1350px){

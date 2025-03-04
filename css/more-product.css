@@ -222,14 +222,14 @@ li{
         zoom: 109%;
      }
     .hero-section{
-        height: 56vh;
+        height: 55vh;
         margin-top: 4vw;
         /* transform: scale(1.1); */
     }
    
-    .hero-left{
+    /* .hero-left{
         margin-bottom: -22px;
-    }
+    } */
     footer{
         transform: scale(1.103);
     }
