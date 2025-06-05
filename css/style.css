@@ -905,7 +905,7 @@ font-size: 14px;
 .right-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: #141414;
   color: #fff;
   font-size: 1rem;
