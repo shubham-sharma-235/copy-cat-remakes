@@ -1034,7 +1034,7 @@ footer{
 @media(max-width:1300px){
   .product-card {
     /* align-items: center; */
-    width: 45vw;
+    width: auto;
     margin: .4rem .4rem;
     height: 10vw;
   }
@@ -1042,7 +1042,7 @@ footer{
     font-size: 1.2rem;
     width: 12rem;
     height: 2.6rem;
-    margin-top: 5.5svw;
+    margin-top: 2.5svw;
     margin-right: .6rem;
     padding: 2px 0;
     font-family: 'Price-ProductCard';
